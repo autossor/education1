@@ -1,0 +1,26 @@
+#--------------------------------------
+# Github Actions Part-1 Basics
+#
+# Copyright (c) by autossor 2023
+#--------------------------------------
+name: My-Github-Action-Basics
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  my-testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print hello message
+      run: echo "hello world from testing"
+      
+  my-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print hello message
+      run: echo "hello world from deploy"
+      
+      
